@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndricim Pllana Photography</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            display: flex; /* Use flexbox for header */
+            justify-content: center; /* Align title to the center */
+        }
+
+        h1 {
+            margin: 0;
+            padding: 10px 20px; /* Add padding around the title */
+            border-radius: 10px; /* Round the corners */
+        }
+
+        main {
+            display: flex; /* Use flexbox for main content */
+            flex-wrap: wrap; /* Allow items to wrap to multiple rows */
+            justify-content: center; /* Center the grid items */
+            padding: 20px;
+        }
+
+        .photo-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: calc(50% - 20px); /* Adjust width for two columns */
+            margin-bottom: 20px; /* Add spacing between rows */
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .photo-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .photo-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .photo-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .photo-item .overlay h2 {
+            margin: 0;
+        }
+
+        /* Styles for the second page */
+        #info-page {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #info-page p {
+            margin-bottom: 10px;
+        }
+
+        #info-page form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        #info-page label {
+            margin-bottom: 5px;
+        }
+
+        #info-page input[type="text"],
+        #info-page input[type="email"] {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #info-page button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #info-page button[type="submit"]:hover {  cursor: pointer;
+        }
+
+        footer {
+            background-color: red; /* Red background */
+            color: white; /* White text */
+            padding: 10px 20px; /* Add some padding */
+            text-align: center;
+            width: 100%;
+            transition: background-position 0.5s ease; /* Add transition for background position */
+        }
+
+        footer:hover {
+            background-position: 100% 0; /* Shift background to the right on hover */
+        }
+
+        /* Style for the "More" button */
+        footer button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        footer button:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Add a subtle hover effect */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="about.html" target="_blank">Ndricim Pllana Photography</a></h1>
+    </header>
+
+   
+    <main>
+        <div class="photo-item">
+            <img src="https://placehold.co/600x400/007bff/ffffff?text=Photo+1" alt="Photo 1">
+            <div class="overlay">
+                <h2>Photo 1</h2>
+            </div>
+        </div>
+        <div class="photo-item">
+            <img src="https://placehold.co/600x400/f08080/ffffff?text=Photo+2" alt="Photo 2">
+            <div class="overlay">
+                <h2>Photo 2</h2>
+            </div>
+        </div>
+        <div class="photo-item">
+            <img src="https://placehold.co/600x400/800080/ffffff?text=Photo+3" alt="Photo 3">
+            <div class="overlay">
+                <h2>Photo 3</h2>
+            </div>
+        </div>
+        <div class="photo-item">
+            <img src="https://placehold.co/600x400/ffff00/000000?text=Photo+4" alt="Photo 4">
+            <div class="overlay">
+                <h2>Photo 4</h2>
+            </div>
+        </div>
+        <div class="photo-item">
+            <img src="https://placehold.co/600x400/00ff00/000000?text=Photo+5" alt="Photo 5">
+            <div class="overlay">
+                <h2>Photo 5</h2>
+            </div>
+        </div>
+        <div class="photo-item">
+            <img src="https://placehold.co/600x400/0000ff/ffffff?text=Photo+6" alt="Photo 6">
+            <div class="overlay">
+                <h2>Photo 6</h2>
+            </div>
+        </div>
+        <div class="photo-item">
+            <img src="https://placehold.co/600x400/ff0000/ffffff?text=Photo+7" alt="Photo 7">
+            <div class="overlay">
+                <h2>Photo 7</h2>
+            </div>
+        </div>
+        <div class="photo-item">
+            <img src="https://placehold.co/600x400/00ffff/000000?text=Photo+8" alt="Photo 8">
+            <div class="overlay">
+                <h2>Photo 8</h2>
+            </div>
+        </div>
+        <div class="photo-item">
+            <img src="https://placehold.co/600x400/808080/ffffff?text=Photo+9" alt="Photo 9">
+            <div class="overlay">
+                <h2>Photo 9</h2>
+            </div>
+        </div>
+        <div class="photo-item">
+            <img src="https://placehold.co/600x400/a0522d/ffffff?text=Photo+10" alt="Photo 10">
+            <div class="overlay">
+                <h2>Photo 10</h2>
+            </div>
+        </div>
+        </main>
+
+    <footer>
+        <p>© 2024 Ndricim Pllana</p>
+        <button onclick="window.location.href='../about.html'" target="_blank">More</button>
+    </footer>
+
+    <script>
+        // Simple form submission (replace with your actual server-side logic)
+        const form = document.querySelector('#info-page form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+            alert('Thank you for your message! I will get back to you soon.');
+        });
+    </script>
+</body>
+</html>
+
